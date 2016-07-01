@@ -9,6 +9,7 @@ html, body {
 body {
     margin: 0px;
     font-family: 'Noto Sans Japanese', sans-serif;
+    background-color: #f0f0f0;
 }
 
 #app-list {
@@ -41,7 +42,7 @@ body {
 }
 
 .app-panel:hover {
-    background-color: #e9e7e4;
+    background-color: #e3e3e3;
     border-radius: 2px;
 }
 
