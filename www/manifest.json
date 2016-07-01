@@ -5,7 +5,8 @@
   "version": "0.1.0",
   "app": {
     "launch": {
-      "local_path": "index.html"
+      "local_path": "index.html",
+      "container": "panel"
     }
   },
   "permissions": [
