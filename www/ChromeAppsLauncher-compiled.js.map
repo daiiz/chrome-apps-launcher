@@ -1,0 +1,1 @@
+{"version":3,"sources":["ChromeAppsLauncher.js"],"names":[],"mappings":";;;;;;;;IAGM,kB,GACF,8BAAe;AAAA;AAEd,C","file":"ChromeAppsLauncher-compiled.js","sourcesContent":["/**\n * Created by daiki on 2016/07/02.\n */\nclass ChromeAppsLauncher {\n    constructor () {\n\n    }\n}"]}

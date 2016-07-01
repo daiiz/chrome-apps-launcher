@@ -3,11 +3,12 @@
   "description": "Chrome Apps Launcher (by daiiz)",
   "manifest_version": 2,
   "version": "0.1.0",
-  "app": {
-    "launch": {
-      "local_path": "index.html",
-      "container": "panel"
-    }
+  "browser_action": {
+    "default_icon": {
+      "19": "seed-icon.png",
+      "38": "seed-icon.png"
+    },
+    "default_popup": "index.html"
   },
   "permissions": [
     "management"
