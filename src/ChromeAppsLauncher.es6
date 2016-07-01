@@ -12,7 +12,7 @@ class ChromeAppsLauncher {
         var $unpacked = $('#app-unpacked');
         this.getInstalledApps(appList => {
             appList.forEach(app => {
-                if (app.isApp) {
+                if (app.isApp && app.enabled) {
                     var name = app.shortName || app.name;
                     var id = app.id;
                     var icon = null;
