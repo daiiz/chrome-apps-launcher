@@ -76,3 +76,9 @@ body {
 input:focus {
     outline: none;
 }
+
+.idx {
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}

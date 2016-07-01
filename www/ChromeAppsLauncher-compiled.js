@@ -18,7 +18,8 @@ var ChromeAppsLauncher = function () {
         key: 'render',
         value: function render() {
             var self = this;
-            var $stage = $('#app-list');
+            var $packed = $('#app-packed');
+            var $unpacked = $('#app-unpacked');
             this.getInstalledApps(function (appList) {
                 appList.forEach(function (app) {
                     if (app.isApp) {
@@ -27,7 +28,13 @@ var ChromeAppsLauncher = function () {
                         var icon = null;
                         if (app.icons) icon = app.icons[app.icons.length - 1].url;
                         var $app = self.$genAppPanel(name, icon, id);
-                        if ($app) $stage.append($app);
+                        if ($app) {
+                            if (app.installType === 'development') {
+                                $unpacked.append($app);
+                            } else {
+                                $packed.append($app);
+                            }
+                        }
                     }
                 });
             });

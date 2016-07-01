@@ -8,7 +8,8 @@ class ChromeAppsLauncher {
 
     render () {
         var self = this;
-        var $stage = $('#app-list');
+        var $packed = $('#app-packed');
+        var $unpacked = $('#app-unpacked');
         this.getInstalledApps(appList => {
             appList.forEach(app => {
                 if (app.isApp) {
@@ -17,7 +18,13 @@ class ChromeAppsLauncher {
                     var icon = null;
                     if (app.icons) icon = app.icons[app.icons.length - 1].url;
                     var $app = self.$genAppPanel(name, icon, id);
-                    if ($app) $stage.append($app);
+                    if ($app) {
+                        if (app.installType === 'development') {
+                            $unpacked.append($app);
+                        }else {
+                            $packed.append($app);
+                        }
+                    }
                 }
             });
         });
