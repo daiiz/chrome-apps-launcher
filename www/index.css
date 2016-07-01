@@ -1,11 +1,40 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
-html {
+html, body {
     width: 300px;
     height: 400px;
+    overflow-y: scroll;
 }
 
 body {
     margin: 0px;
     font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+.app-panel {
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+    width: 71px;
+    height: 71px;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+}
+
+.app-panel > img {
+    width: 48px;
+    height: 48px;
+}
+
+.app-panel > div {
+    width: 100%;
+    overflow: hidden;
+    font-size: 11px;
+}
+
+.app-panel:hover {
+    background-color: #e9e7e4;
+    border-radius: 2px;
 }
