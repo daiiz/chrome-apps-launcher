@@ -38,7 +38,7 @@ class ChromeAppsLauncher {
         if (appIcon !== null) {
             var panel = `<div class="app-panel" data-id="${appId}">
                     <img src="${appIcon}">
-                    <div>${appName}</div>
+                    <div class="app-name">${appName}</div>
                 </div>`;
             return $(panel);
         }

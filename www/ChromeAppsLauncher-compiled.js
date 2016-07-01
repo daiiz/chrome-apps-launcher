@@ -47,7 +47,7 @@ var ChromeAppsLauncher = function () {
         key: '$genAppPanel',
         value: function $genAppPanel(appName, appIcon, appId) {
             if (appIcon !== null) {
-                var panel = '<div class="app-panel" data-id="' + appId + '">\n                    <img src="' + appIcon + '">\n                    <div>' + appName + '</div>\n                </div>';
+                var panel = '<div class="app-panel" data-id="' + appId + '">\n                    <img src="' + appIcon + '">\n                    <div class="app-name">' + appName + '</div>\n                </div>';
                 return $(panel);
             }
             return false;

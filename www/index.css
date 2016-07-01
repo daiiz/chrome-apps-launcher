@@ -11,6 +11,12 @@ body {
     font-family: 'Noto Sans Japanese', sans-serif;
 }
 
+#app-list {
+    position: relative;
+    top: 45px;
+}
+
+
 .app-panel {
     position: relative;
     display: inline-block;
@@ -37,4 +43,36 @@ body {
 .app-panel:hover {
     background-color: #e9e7e4;
     border-radius: 2px;
+}
+
+#searchbox {
+    border-radius: 2px;
+    padding: 10px;
+    color: #263238;
+    width: 280px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+#search-input {
+    width: calc(280px - 30px);
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    font-size: 13px;
+    position: relative;
+    top: -7px;
+}
+
+.search-icon {
+    color: #555;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
 }

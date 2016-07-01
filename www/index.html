@@ -3,12 +3,19 @@
     <head>
         <title>Chrome Apps Launcher</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="libs/jquery-ui.min.css">
+        <link rel="stylesheet" href="libs/mdl/material.min.css">
         <script src="libs/jquery.js"></script>
         <script src="libs/jquery-ui.min.js"></script>
+        <script src="libs/mdl/material.min.js"></script>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <div id="searchbox">
+            <i class="material-icons search-icon">search</i>
+            <input id="search-input" type="text" placeholder="検索">
+        </div>
         <div id="app-list"></div>
         <script src="ChromeAppsLauncher-compiled.js"></script>
         <script src="main-compiled.js"></script>
