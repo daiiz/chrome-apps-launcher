@@ -1,5 +1,6 @@
 // windowの形状記憶
 var tmpTimer = false;
+
 window.addEventListener('resize', function (e) {
     if (tmpTimer !== false) {
         window.clearTimeout(tmpTimer);

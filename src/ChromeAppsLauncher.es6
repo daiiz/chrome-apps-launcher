@@ -3,6 +3,6 @@
  */
 class ChromeAppsLauncher {
     constructor () {
-
+        this.s = 0;
     }
 }

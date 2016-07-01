@@ -1,3 +1,5 @@
+"use strict";
+
 chrome.app.runtime.onLaunched.addListener(function (launchData) {
     var DEFAULT_WIDTH = 600;
     var DEFAULT_HEIGHT = 400;
@@ -15,7 +17,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 });
 
 // MainWindowのサイズ変更を記憶する
-var keepMainWindowSize = function (width, height) {
+var keepMainWindowSize = function keepMainWindowSize(width, height) {
     chrome.storage.local.set({
         "main_window_width": width,
         "main_window_height": height
@@ -23,7 +25,7 @@ var keepMainWindowSize = function (width, height) {
 };
 
 // MainWindowを開く
-var createMainWindow = function (width, height) {
+var createMainWindow = function createMainWindow(width, height) {
     chrome.app.window.create('index.html', {
         width: width,
         height: height,
@@ -40,5 +42,3 @@ var createMainWindow = function (width, height) {
 //         }
 //     });
 // });
-
-//# sourceMappingURL=background-compiled.js.map

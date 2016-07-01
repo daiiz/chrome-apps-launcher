@@ -1,5 +1,8 @@
+"use strict";
+
 // windowの形状記憶
 var tmpTimer = false;
+
 window.addEventListener('resize', function (e) {
     if (tmpTimer !== false) {
         window.clearTimeout(tmpTimer);
@@ -12,5 +15,3 @@ window.addEventListener('resize', function (e) {
         }, null);
     }, 300);
 }, false);
-
-//# sourceMappingURL=seed-compiled.js.map

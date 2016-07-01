@@ -7,7 +7,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  */
 
 var ChromeAppsLauncher = function ChromeAppsLauncher() {
-  _classCallCheck(this, ChromeAppsLauncher);
-};
+    _classCallCheck(this, ChromeAppsLauncher);
 
-//# sourceMappingURL=ChromeAppsLauncher-compiled.js.map
+    this.s = 0;
+};
