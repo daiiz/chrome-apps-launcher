@@ -5,8 +5,8 @@
 var localSearch = function localSearch(v) {
     var keyword = v.toLowerCase().trim();
     var cards = $('.app-panel');
-    var unpacked = keyword.split('u:');
-    if (unpacked.length === 2) {
+    var unpacked = keyword.split(':');
+    if (keyword[0] === ':' && unpacked.length === 2) {
         keyword = unpacked[1];
         cards = $('#app-unpacked .app-panel');
         $('#app-packed .app-panel').hide();
