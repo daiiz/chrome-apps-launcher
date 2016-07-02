@@ -17,6 +17,6 @@ Type a app name in the search box at the top of popup window.
 
 ## Incremental search for unpacked apps
 When you give a prefix `:` to the app name in search box, only unpacked apps will be only included in search results.
-(In other words, packed apps will not shown in results.)
+(In other words, packed apps will not be shown in results.)
 
 [![https://gyazo.com/a3367c998e668b4bd5ada1d3c7a9c66d](https://i.gyazo.com/a3367c998e668b4bd5ada1d3c7a9c66d.png)](https://gyazo.com/a3367c998e668b4bd5ada1d3c7a9c66d)
